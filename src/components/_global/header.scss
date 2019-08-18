@@ -19,7 +19,7 @@ header {
 		flex         : 0 0 33.333%;
 	}
 
-	.center-menu {
+	.add-event {
 		position : absolute;
 		left     : 50%;
 		top      : 50%;
@@ -55,6 +55,10 @@ header {
 		padding-left : 15px;
 		margin-left  : auto;
 		align-self   : center;
+
+		svg {
+			margin: 0 10px 10px 0;
+		}
 
 		span {
 			font-family   : 'Anton', sans-serif;

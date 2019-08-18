@@ -13,10 +13,10 @@ var swiper = new Swiper('.slider-Homebanner', {
 	effect: 'coverflow',
 	slidesPerView: 1,
 	grabCursor: true,
-	speed: 1500,
+	speed: 2000,
 	simulateTouch: false,
 	autoplay: {
-		delay: 8000,
+		delay: 5000,
 		disableOnInteraction: false,
 	},
 	pagination: {
