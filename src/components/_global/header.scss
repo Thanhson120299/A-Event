@@ -6,7 +6,6 @@ header {
 	top        : 0;
 	padding    : 30px 0px;
 	z-index    : 100;
-	align-self : center;
 	align-items: center;
 
 	&.active {
@@ -14,25 +13,55 @@ header {
 	}
 
 	.left-menu {
-		display     : flex;
-		padding-left: 100px;
-		flex        : 0 0 33.333%;
+		padding-right: 15px;
+		padding-left : 15px;
+		display      : flex;
+		flex         : 0 0 33.333%;
 	}
 
 	.center-menu {
-		display        : flex;
-		justify-content: center;
-		align-self     : center;
-		flex           : 0 0 33.333%;
+		position : absolute;
+		left     : 50%;
+		top      : 50%;
+		transform: translate(-50%, -50%);
 
-		h5 {
+		a {
+			display    : flex;
+			align-items: center;
+
+			svg {
+				width       : 24px;
+				margin-right: 10px;
+
+				path,
+				circle {
+					stroke: $main-color-1;
+				}
+			}
+		}
+
+		span {
 			font-family   : 'Anton', sans-serif;
 			color         : $main-color-3;
 			font-weight   : 700;
-			font-size     : 30px;
-			line-height   : 25px;
+			font-size     : 20px;
 			letter-spacing: 2px;
-			margin-left   : 16px;
+			font-weight   : 700;
+		}
+	}
+
+	.login {
+		padding-right: 15px;
+		padding-left : 15px;
+		margin-left  : auto;
+		align-self   : center;
+
+		span {
+			font-family   : 'Anton', sans-serif;
+			color         : $main-color-3;
+			font-weight   : 700;
+			font-size     : 20px;
+			letter-spacing: 2px;
 			font-weight   : 700;
 		}
 	}
