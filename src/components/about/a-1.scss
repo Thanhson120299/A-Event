@@ -1,0 +1,32 @@
+.about {
+	.block-about {
+		cursor           : pointer;
+		position         : relative;
+		overflow         : hidden;
+		height           : 420px;
+		background-image : url(../img/about/bg-about.png);
+		background-size  : cover;
+		background-repeat: no-repeat;
+		color            : $main-color-3;
+
+		h2 {
+			position  : absolute;
+			top       : 50%;
+			transform : translateY(-50%);
+			text-align: right;
+
+			&.text-left {
+				left: 130px;
+
+			}
+
+			&.text-right {
+				right: 130px;
+			}
+
+			span {
+				color: $main-color-1;
+			}
+		}
+	}
+}

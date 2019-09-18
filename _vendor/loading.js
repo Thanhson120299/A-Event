@@ -1,8 +1,8 @@
-(function() {
+(function () {
 	function id(v) {
 		return document.getElementById(v)
 	}
-	console.log(1)
+
 	function loadbar() {
 		var ovrl = id("loading"),
 			prog = id("progress"),
@@ -18,7 +18,7 @@
 		}
 
 		function doneLoading() {
-			ovrl.style.opacity = 0, setTimeout(function() {
+			ovrl.style.opacity = 0, setTimeout(function () {
 				ovrl.style.display = "none"
 			}, 15e2)
 		}

@@ -1,6 +1,9 @@
 $main-color-1: #ffd800;
-$main-color-2: #1b2021;
+// MÀU BACKGROUND MAIN
+$main-color-2: #1a1d1e;
+// MÀU CHỮ
 $main-color-3: #fafafa;
+// MÀU BODY
 $main-color-4: #0d0f0f;
 
 // font title
@@ -18,6 +21,23 @@ body {
 	color                : $main-color-3;
 }
 
-main {
+.bg-main {
 	background: $main-color-2;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
+	background-color: $main-color-2;
+}
+
+::-webkit-scrollbar {
+	width           : 5px;
+	height          : 5px;
+	background-color: $main-color-2;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius   : 2.5px;
+	box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
+	background-color: $main-color-1;
 }

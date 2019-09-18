@@ -12,7 +12,7 @@ const addClassLazyload = () => {
 
 // ACTIVE SCROLL MENU
 function activeScrollMenu() {
-	if ($(window).scrollTop() > 0) {
+	if ($(window).scrollTop() > 50) {
 		$("header").addClass("active")
 	} else {
 		$("header").removeClass("active")
@@ -23,7 +23,7 @@ function activeScrollMenu() {
 function sliderHomeBanner() {
 	var swiper = new Swiper('.slider-Homebanner', {
 		slidesPerView: 1,
-		speed: 2000,
+		speed: 1000,
 		simulateTouch: false,
 		autoplay: {
 			delay: 5000,
@@ -39,6 +39,15 @@ function sliderHomeBanner() {
 	});
 }
 
+// POPUP ABOUT
+function popupAbout() {
+	$('.about [data-fancybox]').fancybox({
+		youtube: {
+			controls: true,
+		},
+	});
+}
+
 
 
 $(document).ready(function () {
@@ -46,14 +55,11 @@ $(document).ready(function () {
 	addClassLazyload(); // Luôn luôn addClass lazyload cho các hình ảnh có thuộc tính [data-src]
 	sliderHomeBanner();
 	activeScrollMenu();
+	popupAbout();
 })
 
 $(document).ajaxComplete(function () {
 	addClassLazyload();
-})
-
-window.addEventListener("scroll", () => {
-	addClassHeaderWhenScroll();
 })
 
 window.addEventListener("scroll", () => {
