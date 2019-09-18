@@ -2,12 +2,13 @@
 	.block-about {
 		cursor           : pointer;
 		position         : relative;
-		overflow         : hidden;
+		color            : $main-color-3;
 		height           : 420px;
+		overflow         : hidden;
 		background-image : url(../img/about/bg-about.png);
 		background-size  : cover;
 		background-repeat: no-repeat;
-		color            : $main-color-3;
+		border-bottom    : 1px solid #323637;
 
 		h2 {
 			position  : absolute;
