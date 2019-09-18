@@ -1,0 +1,42 @@
+section.catalog-event
+	.container
+		.catalog-wrapper.bg-main
+			.title-catalog
+				a(href="#")
+					img.icon(src="./img/icons/add.svg", alt="", srcset="")
+				.name-catalog
+					span A . Event - loại sự kiện
+					a(href="#")
+						h3 Name
+				.event-tag
+					ul.list-eventTag
+						li.item
+							a(href="#") #eventtag-1
+						li.item
+							a(href="#") #eventtag-2
+						li.item
+							a(href="#") #eventtag-3
+						li.item
+							a(href="#") #eventtag-4
+			.swpier-container.slider-ProductByCatalog
+					.swiper-wrapper
+						-for(i=1;i<16;i++)
+							.swiper-slide
+								a(href="#")
+									figure
+										.box-img
+											img.ofc(src="./img/product/"+i+".jpg", alt="", srcset="") 
+										figcaption
+											h3 TÊN CỦA SỰ KIỆN
+											.info-event
+												.price
+													h5 Từ:
+														span 1.500.000 VND
+												.address
+													h5 Địa chỉ:
+														span Hồ Chí Minh
+												.time
+													h5 Thời gian:
+														span 12.12.2019
+					.swiper-button-next.icon
+					.swiper-button-prev.icon

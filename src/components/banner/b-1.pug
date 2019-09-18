@@ -1,53 +1,21 @@
 section.home-banner
 		.container
 			.banner-wrapper
-				.swpier-container.slider-Homebanner
+				.swpier-container.slider-bannerHome
 					.swiper-wrapper
-						.swiper-slide
-							.box-banner
-								figure
-									img(src="./img/banner/b-1.png", alt="", srcset="")
-									figcaption
-										.type-of-event
-											h5
-												span A . Event
-												| | Thể loại sự kiện
-											//- Backup data lấy type event
-											span Âm nhạc
-										.name-event
-											h5 SỰ KIỆN ÂM NHẠC SƠN TÙNG.
-										.decription-event
-											p SÔI ĐỘNG HẤP DẪN ĐẾN TỪNG TIẾT MỤC
-											p 9.9.2019 | 21:00 - SÂN VẬN ĐỘNG QUÂN KHU 7
-						.swiper-slide
-							.box-banner
-								figure
-									img(src="./img/banner/b-2.png", alt="", srcset="")
-									figcaption
-										.type-of-event
-											h5
-												span A . Event
-												| | Thể loại sự kiện
-											//- Backup data lấy type event
-											span Âm nhạc
-										.name-event
-											h5 SỰ KIỆN ÂM NHẠC SƠN TÙNG.
-										.decription-event
-											p SÔI ĐỘNG HẤP DẪN ĐẾN TỪNG TIẾT MỤC
-											p 9.9.2019 | 21:00 - SÂN VẬN ĐỘNG QUÂN KHU 7
-						.swiper-slide
-							.box-banner
-								figure
-									img(src="./img/banner/b-3.png", alt="", srcset="")
-									figcaption
-										.type-of-event
-											h5
-												span A . Event
-												| | Thể loại sự kiện
-											//- Backup data lấy type event
-											span Âm nhạc
-										.name-event
-											h5 SỰ KIỆN ÂM NHẠC SƠN TÙNG.
-										.decription-event
-											p SÔI ĐỘNG HẤP DẪN ĐẾN TỪNG TIẾT MỤC
-											p 9.9.2019 | 21:00 - SÂN VẬN ĐỘNG QUÂN KHU 7
+						-for(i=1;i<5;i++)
+							.swiper-slide
+								.box-banner
+									figure
+										img.ofc(src="./img/banner/"+i+".png", alt="", srcset="")
+										figcaption
+											.type-of-event
+												h5
+													span A . Event
+													| | Thể loại sự kiện
+												span Name
+											.name-event
+												h5 TÊN CỦA SỰ KIỆN TRÊN BANNER
+											.decription-event
+												p ĐOẠN TÓM TẮT CỦA SỰ KIỆN
+												p 9.9.2019 | 21:00 - SÂN VẬN ĐỘNG QUÂN KHU 7 (THỜI GIAN)

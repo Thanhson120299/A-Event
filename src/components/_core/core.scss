@@ -19,6 +19,12 @@ body {
 	justify-content      : center;
 	background           : $main-color-4;
 	color                : $main-color-3;
+	line-height          : 1.5;
+}
+
+ul {
+	list-style: none;
+	padding   : 0;
 }
 
 .bg-main {
@@ -40,4 +46,10 @@ body {
 	border-radius   : 2.5px;
 	box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
 	background-color: $main-color-1;
+}
+
+.icon {
+	cursor: pointer;
+	width : 38px;
+	height: 38px;
 }
