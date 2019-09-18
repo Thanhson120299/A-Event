@@ -56,6 +56,7 @@ $(document).ready(function () {
 	sliderHomeBanner();
 	activeScrollMenu();
 	popupAbout();
+	new WOW().init();
 })
 
 $(document).ajaxComplete(function () {
