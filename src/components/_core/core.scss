@@ -1,15 +1,23 @@
 $main-color-1: #ffd800;
 $main-color-2: #1b2021;
 $main-color-3: #fafafa;
+$main-color-4: #0d0f0f;
 
 // font title
 // font-family: 'Ubuntu', sans-serif;
+
+// font banner
+// font-family: 'Saira Stencil One', cursive;
 
 body {
 	font-family          : 'K2D', sans-serif;
 	display              : grid;
 	grid-template-columns: 100%;
 	justify-content      : center;
-	background           : $main-color-2;
+	background           : $main-color-4;
 	color                : $main-color-3;
+}
+
+main {
+	background: $main-color-2;
 }

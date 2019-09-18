@@ -9,30 +9,53 @@ const addClassLazyload = () => {
 		}
 	});
 }
-var swiper = new Swiper('.slider-Homebanner', {
-	effect: 'coverflow',
-	slidesPerView: 1,
-	grabCursor: true,
-	speed: 2000,
-	simulateTouch: false,
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false,
-	},
-	pagination: {
-		el: '.swiper-pagination',
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-});
+
+// ACTIVE SCROLL MENU
+function activeScrollMenu() {
+	if ($(window).scrollTop() > 0) {
+		$("header").addClass("active")
+	} else {
+		$("header").removeClass("active")
+	}
+}
+
+// SLIDER HOME BANNER
+function sliderHomeBanner() {
+	var swiper = new Swiper('.slider-Homebanner', {
+		slidesPerView: 1,
+		speed: 2000,
+		simulateTouch: false,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+}
+
+
 
 $(document).ready(function () {
 	objectFitImages("img.ofc"); // Luôn luôn chậy polyfill cho thuôc tính object-fit: cover trên các phiên bản IE >= 9
 	addClassLazyload(); // Luôn luôn addClass lazyload cho các hình ảnh có thuộc tính [data-src]
+	sliderHomeBanner();
+	activeScrollMenu();
 })
 
 $(document).ajaxComplete(function () {
 	addClassLazyload();
+})
+
+window.addEventListener("scroll", () => {
+	addClassHeaderWhenScroll();
+})
+
+window.addEventListener("scroll", () => {
+	activeScrollMenu();
 })
